@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Account Registration Complete</h1>
+
+      <form class="form" action="/home/09sign-In" method="post">
+
+
+
+                <p> Thank you. Registration is now complete.
+                  <br><br>
+Please log in to activate your account and new password. You can then access the Onboarding Pensions Dashboard Portal.
+</p>
+
+
+
+
+
+<button class="govuk-button" data-module="govuk-button">Log In</button>
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

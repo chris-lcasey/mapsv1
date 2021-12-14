@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">User Details</h1>
+
+      <form class="form" action="/PBC-registration//03account-registration" method="post">
+
+        <div id="event-name-hint" class="govuk-hint">
+            Please provide your details as a Primary Business Contact representing a Pension Organisation.
+
+          </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="one-half">
+            Full Name
+          </label>
+          <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="one-half">
+              Business Email Address
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="one-half">
+                Phone Number
+              </label>
+              <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="one-half">
+                  ISP/ Organisation of Employment
+                </label>
+                <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+
+
+
+
+
+<button class="govuk-button" data-module="govuk-button">Continue</button>
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

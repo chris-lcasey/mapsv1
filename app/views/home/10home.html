@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Home Page</h1>
+
+      <form class="form" action="/PBC-registration-approval/08account-approval" method="post">
+
+<h3 class="govuk-heading-m">Manage User Accounts</h3>
+
+<a href="/start" data-module="govuk-button">
+    <h3>Change User Profile Details</h3>
+  </a>
+  <p>Change your user profile and personal details and password.</p>
+
+  <a href="/start" data-module="govuk-button">
+      <h3>Manage Users And Roles</h3>
+    </a>
+    <p>As a Primary Business Contact you can manage or add new users linked to your organisation.</p>
+<br>
+<h3 class="govuk-heading-m">Organisation And Pension Schemes</h3>
+
+    <a href="/Endpoint-and-Schemes/11Manage-Organisation-Account-And-Schemes" data-module="govuk-button">
+        <h3>Manage Organisation Account, End Points And Schemes</h3>
+      </a>
+<p>Manage pensions schemes or add more.</p>
+
+      <a href="/start" data-module="govuk-button">
+          <h3>Support Information, Documents And Procedures</h3>
+        </a>
+        <p>Discover Support Information or guidelines. Access Documents and procedures to help navigate the platform and  onboarding journey.
+        </p>
+<br>
+      <h3 class="govuk-heading-m">Testing</h3>
+
+      <a href="/start" data-module="govuk-button">
+          <h3>Manage Testing</h3>
+        </a>
+<p>Manage Conformance and Compliance Testing.</p>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

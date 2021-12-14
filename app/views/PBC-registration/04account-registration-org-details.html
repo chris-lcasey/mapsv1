@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Organisation Details</h1>
+
+      <form class="form" action="/PBC-registration/05account-registration-Agreement" method="post">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="one-half">
+            Organisation Name responsible for Pension Schemes
+          </label>
+          <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+<h3 class="govuk-heading-m">Verification To Act On Organisations Behalf</h3>
+        <div id="event-name-hint" class="govuk-hint">
+          Please provide a singular scheme and Secret to validate access to the (FCA) ‘Financial Conduct Authority’ and (TPR) ‘The Pension Regular’ governance register.
+          This will enable us to provide you with permission to manage the registration of pension schemes.
+      </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="one-half">
+              Pension Scheme ID
+            </label>
+            <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="one-half">
+                Secret
+              </label>
+                <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="one-half">
+                    Organisation Name of Pension Schemes
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text"></div>
+                <h3 class="govuk-heading-m">Verification Letter</h3>
+                <div id="event-name-hint" class="govuk-hint">
+                  Please upload a letter (Word or PDF format) stating your organisation has assigned
+                  you as a representative to act on their behalf on the Pensions Dashboard Programme.
+                  </div>
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="file-upload-1">
+                      Upload a file
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+
+<button class="govuk-button" data-module="govuk-button">Continue</button>
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

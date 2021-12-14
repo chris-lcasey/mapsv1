@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+
+      <h1 class="govuk-heading-xl">Manage Organisation Account And Schemes</h1>
+
+<form class="form" action="/next-page" method="post">
+
+
+  <h3 class="govuk-heading-m">Manage End Points</h3>
+          <div id="event-name-hint" class="govuk-hint">
+            Each End Point has a certificate generated to enable API connection to the PDP Pension Finder Service.
+            Multiple schemes can be registered and added to the same End Point. If the schemes cannot go through the
+            same End Point then a new End Point will be required. It is advised to use as few End Points as possible.
+             Below are your organisations registered End Points:
+        </div>
+
+
+  <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col"> End Point Name/ID </th>
+      <th class="govuk-table__header" scope="col"> Number Of Schemes </th>
+      <th class="govuk-table__header" scope="col"> Add Or Delete Schemes </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        001
+      </td>
+      <td class="govuk-table__cell">
+        6
+      </td>
+      <td onclick="location.href='/home/10home'" class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+  Edit or Add Schemes
+</strong>
+
+      </td>
+      </div>
+
+      </div>
+    </tr>
+
+  </tbody>
+</table>
+
+<h3 class="govuk-heading-m">Request New End Point</h3>
+        <div id="event-name-hint" class="govuk-hint">
+          As a Primary Business Contact you can request additional End Points for registering pensions schemes which cannot pass through existing registered end points.
+To request a new End Points and add schemes click the button below.
+      </div>
+
+
+<br>
+<button class="govuk-button" data-module="govuk-button">Request New End Point</button>
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
